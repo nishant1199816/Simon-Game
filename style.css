@@ -1,0 +1,96 @@
+body{ 
+    text-align: center;
+    background-color: rgba(144, 169, 182, 0.656);
+}
+h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 4rem;
+    color: #ffffff;
+    background: linear-gradient(90deg, rgba(233,30,99,1) 0%, rgba(33,150,243,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin: 20px 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    animation: colorchange 5s infinite alternate;
+}
+
+@keyframes colorchange {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+
+
+.highest-score{
+    margin-top:10px ;
+}
+
+.container{
+display: flex;
+justify-content: center;
+}
+.btn{
+    width: 200px;
+    height: 200px;
+    /* border: 5px solid black; */
+    border-radius: 20%;
+    margin: 2.5rem;
+    box-shadow:25px 25px 75px rgba(0, 0, 0, 0.25), 10px 10px 70px rgba(84, 79, 79, 0.25),
+    inset 5px 5px 10px rgba(168, 160, 160, 0.25),
+    inset  5px 5px 20px rgba(255, 255, 255, 0.2),
+    inset -5px -5px 15px rgba(69, 61, 61, 0.75) ;
+
+}
+.red{
+    background-color: rgb(213, 80, 117);
+}
+.yellow{
+    background-color: rgb(250, 144, 59);
+}
+.green{
+    background-color: rgb(4, 187, 114);
+}
+.purple{
+    background-color: rgba(195, 5, 195, 0.84);
+}
+
+.flash{
+    background-color: rgb(250, 245, 245);
+}
+.userflash{
+    background-color: rgb(14, 13, 13);
+}
+
+
+/* Media Query for Phones */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.5rem;
+        margin: 20px 0;
+        margin-top: 3rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin-top: 3rem;
+    }
+    h3{
+        margin-bottom: 5rem;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        }
+    
+    .btn { 
+        height: 150px;
+        width: 150px;
+        margin: 2rem;   
+    }
+}
+
